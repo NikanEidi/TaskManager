@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="toggleMode" aria-label="Toggle Dark/Light Mode" class="toggle-btn">🌙</button>
+
+    <main class="container">
+        <header>
+            <h1>Taskify: Manage Your Tasks</h1>
+        </header>
+
+        <section class="task-section">
+            <!-- Task Input Form -->
+            <form id="TaskForm" class="task-form">
+                <input type="text" id="TaskInput" placeholder="Enter your task" aria-label="Task Input">
+                <button type="submit" class="add-btn">Add Task</button>
+            </form>
+
+            <!-- Task List -->
+            <ul id="TaskList" class="task-list">
+                <li class="task-item">
+                    <span>Example Task</span>
+                    <button class="done-btn" aria-label="Mark as Done">✔️</button>
+                    <button class="edit-btn" aria-label="Edit Task">✏️</button>
+                    <button class="delete-btn" aria-label="Delete Task">🗑️</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Taskify : Nikan Eidi 2025. Simplify your tasks with us.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
